@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Shorts 視聴時間アラート",
+  "version": "1.0.0",
+  "description": "YouTube Shortsを連続視聴した時間を10分毎に右上にポップアップで通知します",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://www.youtube.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/shorts/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
