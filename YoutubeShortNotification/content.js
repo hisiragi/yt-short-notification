@@ -1,8 +1,3 @@
-/**
- * YouTube Shorts 視聴時間アラート
- * 10分ごとに右上ポップアップで通知
- */
-
 (function () {
   'use strict';
 
